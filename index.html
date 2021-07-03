@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Most Played Artist</title>
+        <link rel="stylesheet" href="Scss/main.css" />
+        <link rel="stylesheet" href="https://use.typekit.net/elz6cgm.css" />
+    </head>
+    <body onload="onPageLoad()">
+        <div class="container">
+            <h1 class="title">Who's Your Favorite Artist?</h1>
+            <button class="button" onclick="requestAuthorization()">Log in</button>
+            <ol class="artists_list"></ol>
+            <div id="images"></div>
+            <!-- Video -->
+            <div class="overlay"> 
+                <video src="images/vinyl.mp4" muted loop autoplay class="video"></video>
+            </div>
+        </div>
+
+        <script src="js/app.js"></script>
+        <script src="js/autherization.js"></script>
+    </body>
+</html>
